@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel Margin="10">
+            <TextBlock Text="Введите разделитель:" Margin="0,0,0,5"/>
+            <TextBox x:Name="SeparatorInput" Text="," Margin="0,0,0,10" />
+            <Button Content="Показать список" Click="ShowInfo" Margin="0,0,0,10"/>
+            <Label x:Name="ResultOutput" Height="260" BorderBrush="Aqua" BorderThickness="1"/>
+        </StackPanel>
     </Grid>
 </Window>
